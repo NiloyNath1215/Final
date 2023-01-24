@@ -2,7 +2,7 @@
 
 :root{
     --green: #32561d;
-    --red:  #AA4A44;
+    --red: #AA4A44;
     --black:#130f40;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -29,7 +29,7 @@ html{
 }
 
 body{
-    background:#eee;
+    background:#FFD700;
 }
 
 section{
@@ -107,7 +107,7 @@ section{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(97,138,254,0.9);
+    background: #FFD700;
     }
 /* 
   .container {
@@ -257,8 +257,8 @@ section{
 button.calculate {
     cursor: pointer;
     font-family: "Nunito", sans-serif;
-    color: #fff;
-    background: var(--red);
+    color: #000;
+    background: #AA4A44;
     font-size: 16px;
     border-radius: 7px;
     padding: 12px 0;
@@ -268,7 +268,7 @@ button.calculate {
     transition: all 0.5s;
   }
   button.calculate:hover {
-    background: var(--red);
+    background: #AA4A44;
   }
 
   
@@ -285,7 +285,7 @@ button.calculate {
   .result #result {
     font-size: 36px;
     font-weight: 900;
-    color: #4f7df9;
+    color: var(--red);
     background-color: #eaeaea;
     display: inline-block;
     padding: 7px 20px;
@@ -293,7 +293,7 @@ button.calculate {
     margin-bottom: 25px;
   }
   #comment {
-    color: #4f7df9;
+    color: var(--red);
     font-weight: 800;
   }
 
@@ -458,7 +458,7 @@ border: 2px solid red;
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: var(--red);
   float: right;
   font-size: 28px;
   font-weight: bold;
