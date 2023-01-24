@@ -257,7 +257,7 @@ button.calculate {
     cursor: pointer;
     font-family: "Nunito", sans-serif;
     color: #fff;
-    background: rgb(97,138,254,1);
+    background: var(--red);
     font-size: 16px;
     border-radius: 7px;
     padding: 12px 0;
@@ -267,7 +267,7 @@ button.calculate {
     transition: all 0.5s;
   }
   button.calculate:hover {
-    background: #0044ff;
+    background: var(--red);
   }
 
   
