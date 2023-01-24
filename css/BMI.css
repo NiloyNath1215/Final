@@ -147,6 +147,7 @@ section{
 }
 
   .box {
+    margin-top: 17%;
     width: 500px;
     background: #fafafa;
     border-radius: 12px;
