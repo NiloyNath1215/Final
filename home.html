@@ -13,6 +13,9 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="chatbot-main/chat.css">
+    <link rel="stylesheet" href="chatbot-main/home1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -26,6 +29,9 @@
         <a href="CAL.html">Calorie Calculator</a>
         <a href="BMI.html">BMI Calculator</a>
         <a href="news.html">Blogs</a>
+        <a href="dwIndex.html">Wallet</a>
+        <a href="food.html">Food</a>
+        <a href="https://map-pro-shohan.netlify.app/">Map</a>
     </nav>
 </header>
 
@@ -36,9 +42,7 @@
 <section class="home" id="home">
 
     <div class="content">
-        <h3>fresh and <span>organic</span> products for your</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.</p>
-        <a href="#" class="btn">shop now</a>
+        <h3>Health is like money we never have a true idea of it's value until we lose it </h3>  
     </div>
 
 </section>
@@ -48,9 +52,14 @@
 <!-- features section starts  -->
 
 <section class="features" id="features">
-
+<div>
     <h1 class="heading"> our <span>features</span> </h1>
     </div>
+
+    <p class="p-content">Interactive tools: Such as a calorie calculator, macro tracker, and meal planning calendar.</p>
+    <p class="p-content">Educational resources: Information on different diets, nutrition facts, and cooking tips.</p>
+    <p class="p-content">Recipe database: A searchable database of healthy recipes that can be filtered by dietary restrictions, ingredients, and meal type.</p>
+    <p class="p-content">A digital wallet: Also known as an e-wallet, is an electronic device, online service, or software program that allows one party to make electronic transactions with another party bartering digital currency units for goods and services. </p>
 
 </section>
 
@@ -71,7 +80,7 @@
 
         <div class="box">
             <h3> Vital-Vittles <i class="fas fa-heartbeat"></i> </h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <p>Health is like money we never have a true idea of it's value until we lose it</p>
             <div class="share">
                 <a href="#" class="fab fa-facebook-f"></a>
                 <a href="#" class="fab fa-twitter"></a>
@@ -82,20 +91,20 @@
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> XYZ@srmist.edu.in </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +917387024925 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91735659304 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> nk5057@ssrmist.edu.in </a>
             <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Chennai, India - 603203 </a>
         </div>
 
         <div class="box">
             <h3>quick links</h3>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+            <a href="home.html" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="CAL.html" class="links"> <i class="fas fa-arrow-right"></i> Calorie Calculator </a>
+            <a href="BMI.html" class="links"> <i class="fas fa-arrow-right"></i> BMI Calculator </a>
+            <a href="" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> wallet </a>
+            <a href="food.html" class="links"> <i class="fas fa-arrow-right"></i> food </a>
         </div>
 
         <div class="box">
@@ -113,21 +122,54 @@
 </section>
 
 <!-- footer section ends -->
+ <!-- CHAT BAR BLOCK -->
+ <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
 
+    <div class="content">
+        <div class="full-chat-block">
+            <!-- Message Container -->
+            <div class="outer-container">
+                <div class="chat-container">
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
 
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
 
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
 
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
 
+                </div>
+            </div>
 
+        </div>
+    </div>
 
+</div>
 
-
-
-
-
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="chatbot-main/responses.js"></script>
+<script src="chatbot-main/chat.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
